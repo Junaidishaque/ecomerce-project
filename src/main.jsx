@@ -8,6 +8,7 @@ import App from './App.jsx'
 import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ProductDetails from './components/ProductDetails.jsx';
 const router = createBrowserRouter([
     {
       path: "/",
@@ -22,6 +23,11 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+        
+      },
+      {
+        path: "/details/:id",
+        element: <ProductDetails />,
         
       },
   ]);

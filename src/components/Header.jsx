@@ -21,7 +21,7 @@ const Header = () => {
     <>
         <Navbar expand="lg"  bg="primary" data-bs-theme="dark">
       <Container>
-        <Navbar.Brand style={{fontSize:30 , fontWeight:'bold', color:'black'}}>My Store </Navbar.Brand>
+        <Navbar.Brand style={{fontSize:30 , fontWeight:'bold'}}>My Store </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -32,9 +32,10 @@ const Header = () => {
             })
           }
             
-            <i className="fa-solid fa-cart-shopping cart"></i>
+          
          
           </Nav>
+          <i className="fa-solid fa-cart-shopping cart"></i>
         </Navbar.Collapse>
       </Container>
     </Navbar>
